@@ -1,0 +1,45 @@
+*{
+    
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.thumbnail img{
+    width: 70%;
+}
+.thumbnail{
+    padding: 0;
+}
+.thumbnail .caption{
+    padding: 9px;
+}
+
+#deleteform{
+    display: inline;
+}
+.del{
+    display: inline;
+}
+.foot{
+    background-color: lightblue;
+    position: fixed;
+    height: 150px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+.fooot{
+    background-color: lightblue;
+   
+    height: 150px;
+    /* bottom: 0px; */
+    /* left: 0px;
+    right: 0px; */
+    /* margin-bottom: 0px; */
+}
+
+.div{
+    padding-left: 20%;
+}

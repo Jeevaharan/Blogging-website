@@ -1,0 +1,44 @@
+<%- include("../partials/header") %>
+
+
+<div class="container">
+<header class="jumbotron">
+    <div class="container">
+     <h1>Welcome!</h1>
+    <h1>Share your experience with the world <i class="fas fa-camera"></i> </h1>
+    <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add a Blog</a>
+   
+    </div>
+</header>
+
+
+<div class="row text-center"  style="display: flex;flex-wrap: wrap;">
+<% campgrounds.forEach(function(campground){ %>
+    <div class="col-md-4 col-sm-6">
+        <div class="thumbnail">
+              <img src="<%=campground.image %>">
+              <div class="caption">
+              <h4><%= campground.name %> </h4>
+              </div>
+              <p>
+                  <a href="campgrounds/<%= campground._id %>" class="btn btn-info">More Info</a>
+              </p>
+        </div>
+    </div>
+<% }); %>
+</div>
+</div>
+
+<!-- <%- include("../partials/footer") %> -->
+<div class="fooot">
+<footer class="page-footer font-small blue fooot">  
+    <div class="footer-copyright text-center py-3">
+      <h1>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+       <a href="https://twitter.com/explore">  <i class="fab fa-twitter-square"></i></a></h1>
+       
+        © 2020 Copyrights
+    </div>
+  </footer>
+ </div>

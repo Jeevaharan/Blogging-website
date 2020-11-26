@@ -1,0 +1,42 @@
+<%- include("./partials/header") %>
+
+<div class="container">
+   <div style="width: 300px; margin:100px auto;">
+   <form  action="/register" method="POST">
+        <h3 style="text-align: center;">Signup</h3>
+        
+        <div class="form-group">
+
+              <div class="input-group flex-nowrap">
+                     <div class="input-group-prepend">
+                       <span class="input-group-text" id="addon-wrapping"><i class="far fa-user"></i></span>
+                     </div>
+
+               <input  class="form-control" name="username" placeholder="Username">
+        </div>
+        </div>
+
+       <p></p>
+
+        <div class="form-group">
+
+              <div class="input-group flex-nowrap">
+                     <div class="input-group-prepend">
+                       <span class="input-group-text" id="addon-wrapping"><i class="fas fa-lock"></i></span>
+              </div>
+
+        <input class="form-control" name="password" placeholder="Password">
+        </div>
+        <p></p>
+        <div>
+        <button class="btn btn-lg btn-success btn-block">Submit</button>
+        </div>
+        <p></p>
+        <a href="/login">Already have an account</a>
+</form>
+</div>
+</div>
+
+<%- include("./partials/footer") %> 
+
+

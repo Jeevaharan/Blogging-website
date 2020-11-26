@@ -1,0 +1,45 @@
+<%- include("./partials/header") %>
+
+   <!-- req.flash("success"," welcome to yelpCamp "); -->
+
+   <div class="container">
+    <div style="width: 300px; margin:100px auto;">
+
+ 
+    <form action="/login" method="POST">
+        <h3 style="text-align: center;">Login</h3>   
+
+        <div class="form-group">
+          
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping"><i class="far fa-user"></i></span>
+            </div>
+
+          <input  class="form-control " name="username" placeholder="Username">
+       </div>
+       <p></p>
+       <div class="form-group">
+
+        <div class="input-group flex-nowrap">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="addon-wrapping"><i class="fas fa-lock"></i></span>
+          </div>
+          <input class="form-control" type="password" name="password" placeholder="Password">
+       </div>
+       <p></p>
+       <div class="form-group">
+          
+          <button class="btn btn-lg btn-success btn-block">Submit</button>
+      </div>
+      <p></p>
+      <a href="/register">Create new account</a>
+        </form>
+    </div>
+   
+  </div>
+
+
+
+  <%- include("./partials/footer") %>  
+
